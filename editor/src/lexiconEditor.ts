@@ -17,17 +17,22 @@ export default class LexiconEditorProvider
         "lexiconEditorScript.js"
       )
     );
-
+    webviewPanel.webview.options = { enableScripts: true };
     webviewPanel.webview.html = /*html*/ `
-        <html>
-            <head>
-                <meta charset="UTF-8" />
-                <script defer src="${scriptSrc}"></script>
-            </head>
-            <body id="main">
-                
-            </body>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <script defer src="${scriptSrc}"></script>
+        </head>
+        <body id="main">
+        </body>
         </html>
     `;
+
+    webviewPanel.webview.postMessage({
+      messageType: "init",
+      json: document.getText(),
+    });
   }
 }
