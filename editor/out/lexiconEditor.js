@@ -43,8 +43,16 @@ class LexiconEditorProvider {
         </body>
         </html>
     `;
+        vscode.workspace.onDidSaveTextDocument((e) => {
+            if (e.uri.toString() === document.uri.toString()) {
+                webviewPanel.webview.postMessage({
+                    messageType: "update",
+                    json: e.getText(),
+                });
+            }
+        });
         webviewPanel.webview.postMessage({
-            messageType: "init",
+            messageType: "update",
             json: document.getText(),
         });
     }

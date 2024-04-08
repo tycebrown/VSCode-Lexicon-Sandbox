@@ -2,7 +2,7 @@
   const vscode = acquireVsCodeApi();
   window.addEventListener("message", (e) => {
     switch (e.data.messageType) {
-      case "init":
+      case "update":
         const data = JSON.parse(e.data.json);
         const main = document.getElementById("main");
 
@@ -25,7 +25,7 @@
           })
         );
 
-        main.append(header, lexiconEntryList);
+        main.replaceChildren(header, lexiconEntryList);
         break;
     }
   });
