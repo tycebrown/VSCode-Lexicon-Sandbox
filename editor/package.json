@@ -12,10 +12,23 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
+    "languages": [
       {
-        "command": "editor.helloWorld",
-        "title": "Hello World"
+        "id": "json",
+        "extensions": [
+          ".lexicon"
+        ]
+      }
+    ],
+    "customEditors": [
+      {
+        "viewType": "globalBibleTools.lexiconEditor",
+        "displayName": "Lexicon Editor",
+        "selector": [
+          {
+            "filenamePattern": "*.lexicon"
+          }
+        ]
       }
     ]
   },
