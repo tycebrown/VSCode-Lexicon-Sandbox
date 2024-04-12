@@ -1,6 +1,6 @@
 import * as vscode from "vscode";
 
-export default class LexiconEditorProvider
+export default class LexiconViewerProvider
   implements vscode.CustomTextEditorProvider
 {
   constructor(private readonly context: vscode.ExtensionContext) {}
@@ -14,7 +14,7 @@ export default class LexiconEditorProvider
       vscode.Uri.joinPath(
         this.context.extensionUri,
         "src",
-        "lexiconEditorScript.js"
+        "lexiconViewerScript.js"
       )
     );
     webviewPanel.webview.options = { enableScripts: true };
@@ -33,14 +33,14 @@ export default class LexiconEditorProvider
     vscode.workspace.onDidSaveTextDocument((e) => {
       if (e.uri.toString() === document.uri.toString()) {
         webviewPanel.webview.postMessage({
-          messageType: "update",
+          messageType: "updateView",
           json: e.getText(),
         });
       }
     });
 
     webviewPanel.webview.postMessage({
-      messageType: "update",
+      messageType: "updateView",
       json: document.getText(),
     });
   }

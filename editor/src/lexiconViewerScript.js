@@ -1,8 +1,7 @@
 (function () {
-  const vscode = acquireVsCodeApi();
   window.addEventListener("message", (e) => {
     switch (e.data.messageType) {
-      case "update":
+      case "updateView":
         const data = JSON.parse(e.data.json);
         const main = document.getElementById("main");
 

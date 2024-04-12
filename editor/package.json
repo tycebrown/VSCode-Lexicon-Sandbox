@@ -22,8 +22,8 @@
     ],
     "customEditors": [
       {
-        "viewType": "globalBibleTools.lexiconEditor",
-        "displayName": "Lexicon Editor",
+        "viewType": "globalBibleTools.lexiconViewer",
+        "displayName": "Lexicon Viewer",
         "selector": [
           {
             "filenamePattern": "*.lexicon"
