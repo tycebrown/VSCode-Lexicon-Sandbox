@@ -1,0 +1,23 @@
+.entry {
+    font-size: 2em;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.custom-input {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    outline: none;
+    
+}

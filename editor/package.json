@@ -29,6 +29,15 @@
             "filenamePattern": "*.lexicon"
           }
         ]
+      },
+      {
+        "viewType": "globalBibleTools.lexiconEditorOneEntry",
+        "displayName": "Lexicon Editor (One Entry at a Time)",
+        "selector": [
+          {
+            "filenamePattern": "*.lexicon"
+          }
+        ]
       }
     ]
   },
