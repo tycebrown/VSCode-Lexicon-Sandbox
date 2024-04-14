@@ -31,7 +31,8 @@ class LexiconEditorOneEntryProvider {
     }
     async resolveCustomTextEditor(document, webviewPanel, token) {
         const styleSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "styles", "lexiconEditorOneEntryStyles.css"));
-        const scriptSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "lexiconEditorOneEntryScript.js"));
+        const utilityScriptSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "utility.js"));
+        const mainScriptSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "lexiconEditorOneEntryScript.js"));
         webviewPanel.webview.options = { enableScripts: true };
         webviewPanel.webview.html = /*html*/ `
         <!DOCTYPE html>
@@ -39,7 +40,8 @@ class LexiconEditorOneEntryProvider {
         <head>
             <meta charset="UTF-8" />
             <link rel="stylesheet" href="${styleSrc}">
-            <script defer src="${scriptSrc}"></script>
+            <script defer src="${utilityScriptSrc}"></script>
+            <script defer src="${mainScriptSrc}"></script>
         </head>
         <body id="main">
         </body>
@@ -53,13 +55,6 @@ class LexiconEditorOneEntryProvider {
                 });
             }
         });
-        const data = JSON.parse(document.getText());
-        data.entries.forEach((entry) => {
-            entry.translatedContent = entry.content?.replace(/(<[^>]+>)|([a-zA-Z-]+(?:\s[a-zA-Z-]+)*)/g, (match, tagGroup, textGroup) => tagGroup ? match : "@@@@");
-        });
-        const edit = new vscode.WorkspaceEdit();
-        edit.replace(document.uri, new vscode.Range(0, 0, document.lineCount, 0), JSON.stringify(data));
-        vscode.workspace.applyEdit(edit);
         webviewPanel.webview.postMessage({
             messageType: "updateView",
             json: document.getText(),

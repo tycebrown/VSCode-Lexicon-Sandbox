@@ -9,39 +9,17 @@
         const header = document.createElement("h1");
         header.innerText = data.lexiconName;
 
-        const entry = document.createElement("p");
-        entry.innerHTML = interlineate(data.entries[0].content).join("");
-
-        entry.classList.add("entry");
+        const entry = createEditableEntryElement(data.entries[0]);
 
         main.replaceChildren(header, entry);
         break;
     }
   });
 
-  function interlineate(content) {
-    return content
-      .replace(
-        /(<[^>]+>)|([a-zA-Z-]+(?:\s[a-zA-Z-]+)*)/g,
-        (match, tagGroup, textGroup) =>
-          tagGroup ? `@@#${match}@@` : `@@%${match}@@`
-      )
-      .split("@@")
-      .filter((value) => value !== "")
-      .map((node, index) =>
-        node[0] === "#"
-          ? `${node.substring(1)}`
-          : node[0] === "%"
-          ? /* html */ `
-            <div class="inline-flex flex-col">
-                <div class="inline-block">${node.substring(1)}</div>
-                <span class="custom-input" role="textbox" contenteditable="true" />
-            </div>`
-          : /* html */ `
-            <div class="inline-flex flex-col">
-                <div class="inline-block">${node}</div>
-                <div class="inline-block">${node}</div>
-            </div>`
-      );
+  function createEditableEntryElement(entry) {
+    const element = document.createElement("p");
+    element.innerHTML = interlineate(entry).join("");
+    element.classList.add("text-2m");
+    return element;
   }
 })();
