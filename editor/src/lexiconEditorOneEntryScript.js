@@ -3,15 +3,14 @@
     switch (e.data.messageType) {
       case "updateView":
         const data = JSON.parse(e.data.json);
+        data.entries.forEach((entry) => entry["translatedContent"]);
         const main = document.getElementById("main");
 
         const header = document.createElement("h1");
         header.innerText = data.lexiconName;
 
         const entry = document.createElement("p");
-        entry.innerHTML = interlineate(data.entries[0].content)
-          .flatMap((node) => `${node}`)
-          .join("");
+        entry.innerHTML = interlineate(data.entries[0].content).join("");
 
         entry.classList.add("entry");
 
@@ -21,25 +20,27 @@
   });
 
   function interlineate(content) {
-    const temp = document.createElement("div");
-    temp.innerHTML = content;
-    return temp.innerText
+    return content
       .replace(
-        /[a-zA-Z-]+(?:\s[a-zA-Z-]+)*/g,
-        "@@<span style='background-color: red'>$&</span>@@"
+        /(<[^>]+>)|([a-zA-Z-]+(?:\s[a-zA-Z-]+)*)/g,
+        (match, tagGroup, textGroup) =>
+          tagGroup ? `@@#${match}@@` : `@@%${match}@@`
       )
       .split("@@")
+      .filter((value) => value !== "")
       .map((node, index) =>
-        index % 2 === 0
+        node[0] === "#"
+          ? `${node.substring(1)}`
+          : node[0] === "%"
           ? /* html */ `
             <div class="inline-flex flex-col">
-                <div class="inline-block">${node}</div>
-                <div class="inline-block">${node}</div>
+                <div class="inline-block">${node.substring(1)}</div>
+                <span class="custom-input" role="textbox" contenteditable="true" />
             </div>`
           : /* html */ `
             <div class="inline-flex flex-col">
                 <div class="inline-block">${node}</div>
-                <span class="custom-input" role="textbox" contenteditable="true" />
+                <div class="inline-block">${node}</div>
             </div>`
       );
   }

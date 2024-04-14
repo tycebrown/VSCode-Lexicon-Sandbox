@@ -48,6 +48,23 @@ export default class LexiconEditorOneEntryProvider
       }
     });
 
+    const data = JSON.parse(document.getText());
+    data.entries.forEach((entry: any) => {
+      entry.translatedContent = entry.content?.replace(
+        /(<[^>]+>)|([a-zA-Z-]+(?:\s[a-zA-Z-]+)*)/g,
+        (match: string, tagGroup: string, textGroup: string) =>
+          tagGroup ? match : "@@@@"
+      );
+    });
+
+    const edit = new vscode.WorkspaceEdit();
+    edit.replace(
+      document.uri,
+      new vscode.Range(0, 0, document.lineCount, 0),
+      JSON.stringify(data)
+    );
+    vscode.workspace.applyEdit(edit);
+
     webviewPanel.webview.postMessage({
       messageType: "updateView",
       json: document.getText(),
