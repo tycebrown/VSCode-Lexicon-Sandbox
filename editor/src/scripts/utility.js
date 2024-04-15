@@ -1,7 +1,7 @@
 // TODO (FUTURE): turn this file into an import entries.
 
 const DELIMITER = "@@";
-const TRANSLATABLE_TEXT_PREFIX = "%";
+const ENGLISH_TEXT_PREFIX = "%";
 const TAG_PREFIX = "#";
 
 function createEntry(ref, rawContent) {
@@ -18,7 +18,7 @@ function createEntry(ref, rawContent) {
       `${DELIMITER}${
         !!tagGroup
           ? TAG_PREFIX + tagGroup
-          : TRANSLATABLE_TEXT_PREFIX + translatableTextGroup
+          : ENGLISH_TEXT_PREFIX + translatableTextGroup
       }${DELIMITER}`
   );
   translatedContent = rawContent.replace(
@@ -27,7 +27,7 @@ function createEntry(ref, rawContent) {
       `${DELIMITER}${
         !!tagGroup
           ? TAG_PREFIX + tagGroup
-          : TRANSLATABLE_TEXT_PREFIX + "" /* no translated content yet */
+          : ENGLISH_TEXT_PREFIX + "" /* no translated content yet */
       }${DELIMITER}`
   );
 
@@ -50,10 +50,25 @@ function tokenizeEntryContent(content) {
               .replace("/span", "/div")
               .replace("span", "div class='inline-block'"),
           };
-        case TRANSLATABLE_TEXT_PREFIX:
+        case ENGLISH_TEXT_PREFIX:
           return { type: "english_text", subContent: subContent.substring(1) };
         default:
           return { type: "non_english_text", subContent: subContent };
       }
     });
+}
+
+function detokenizeEntryContent(tokens) {
+  return tokens
+    .map(({ type, subContent }) => {
+      switch (type) {
+        case "tag":
+          return `${DELIMITER}${TAG_PREFIX}${subContent}${DELIMITER}`;
+        case "english_text":
+          return `${DELIMITER}${ENGLISH_TEXT_PREFIX}${subContent}${DELIMITER}`;
+        case "non_english_text":
+          return `${DELIMITER}${subContent}${DELIMITER}`;
+      }
+    })
+    .join("");
 }

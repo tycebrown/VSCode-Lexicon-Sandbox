@@ -58,7 +58,23 @@ export default class LexiconEditorOneEntryProvider
         });
       }
     });
-
+    webviewPanel.webview.onDidReceiveMessage((e) => {
+      switch (e.messageType) {
+        case "updateEntry":
+          const edit = new vscode.WorkspaceEdit();
+          const data = JSON.parse(document.getText());
+          data.entries.find(
+            (entry: any) => entry.ref === e.ref
+          ).translatedContent = e.translatedContent;
+          edit.replace(
+            document.uri,
+            new vscode.Range(0, 0, document.lineCount, 0),
+            JSON.stringify(data, null, 2)
+          );
+          vscode.workspace.applyEdit(edit);
+          break;
+      }
+    });
     webviewPanel.webview.postMessage({
       messageType: "updateView",
       json: document.getText(),

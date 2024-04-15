@@ -1,8 +1,25 @@
 (function () {
+  const vscode = acquireVsCodeApi();
+  let entries;
+  document.getElementById("main").addEventListener("input", (e) => {
+    const [index, ref] = e.target.id.split("-");
+    const translatedContentTokens = tokenizeEntryContent(
+      entries.find((entry) => entry.ref === ref).translatedContent
+    );
+
+    translatedContentTokens[index].subContent = e.target.textContent;
+    vscode.postMessage({
+      messageType: "updateEntry",
+      ref,
+      translatedContent: detokenizeEntryContent(translatedContentTokens),
+    });
+  });
+
   window.addEventListener("message", function (e) {
     switch (e.data.messageType) {
       case "updateView":
         const data = JSON.parse(e.data.json);
+        entries = data.entries;
         data.entries.forEach((entry) => entry["translatedContent"]);
         const main = document.getElementById("main");
 
@@ -28,10 +45,9 @@
     const translatedContentTokens = tokenizeEntryContent(
       entry.translatedContent
     );
-    // return [`<div>${JSON.stringify(contentTokens, null, 2)}</div>`];
     return contentTokens
       .map((value, index) => [value, translatedContentTokens[index]])
-      .map(([contentToken, translatedContentToken]) => {
+      .map(([contentToken, translatedContentToken], index) => {
         switch (contentToken.type) {
           case "tag": {
             return contentToken.subContent;
@@ -40,12 +56,12 @@
             return /* html */ `
               <div class="inline-flex flex-col mb-0.5">
                   <div class="inline-block">${contentToken.subContent}</div>
-                  <span class="custom-input" role="textbox" contenteditable="true">${translatedContentToken.subContent}</span>
+                  <span id="${index}-${entry.ref}" class="custom-input" role="textbox" contenteditable="true">${translatedContentToken.subContent}</span>
               </div>`;
           }
           case "non_english_text": {
             return /*html*/ `
-              <div class="inline-flex flex-col">
+              <div class="inline-flex flex-col mb-0.5">
                   <div class="inline-block">${contentToken.subContent}</div>
                   <div class="inline-block">${translatedContentToken.subContent}</div>
               </div>`;
