@@ -45,6 +45,8 @@ function tokenizeEntryContent(content) {
             type: "tag",
             subContent: subContent
               .substring(1)
+              .replace(/<\/?big[^>]*>/, "")
+              .replace(/<\/?a[^>]*>/, "")
               .replace("/span", "/div")
               .replace("span", "div class='inline-block'"),
           };

@@ -38,7 +38,7 @@
           }
           case "english_text": {
             return /* html */ `
-              <div class="inline-flex flex-col">
+              <div class="inline-flex flex-col mb-0.5">
                   <div class="inline-block">${contentToken.subContent}</div>
                   <span class="custom-input" role="textbox" contenteditable="true">${translatedContentToken.subContent}</span>
               </div>`;
