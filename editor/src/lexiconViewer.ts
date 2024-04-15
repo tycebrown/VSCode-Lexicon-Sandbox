@@ -14,6 +14,7 @@ export default class LexiconViewerProvider
       vscode.Uri.joinPath(
         this.context.extensionUri,
         "src",
+        "scripts",
         "lexiconViewerScript.js"
       )
     );

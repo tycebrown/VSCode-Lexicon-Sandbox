@@ -19,15 +19,22 @@ export default class LexiconEditorOneEntryProvider
       )
     );
     const utilityScriptSrc = webviewPanel.webview.asWebviewUri(
-      vscode.Uri.joinPath(this.context.extensionUri, "src", "utility.js")
+      vscode.Uri.joinPath(
+        this.context.extensionUri,
+        "src",
+        "scripts",
+        "utility.js"
+      )
     );
     const mainScriptSrc = webviewPanel.webview.asWebviewUri(
       vscode.Uri.joinPath(
         this.context.extensionUri,
         "src",
+        "scripts",
         "lexiconEditorOneEntryScript.js"
       )
     );
+
     webviewPanel.webview.options = { enableScripts: true };
     webviewPanel.webview.html = /*html*/ `
         <!DOCTYPE html>

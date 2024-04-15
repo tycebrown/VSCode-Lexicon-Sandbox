@@ -31,8 +31,8 @@ class LexiconEditorOneEntryProvider {
     }
     async resolveCustomTextEditor(document, webviewPanel, token) {
         const styleSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "styles", "lexiconEditorOneEntryStyles.css"));
-        const utilityScriptSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "utility.js"));
-        const mainScriptSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "lexiconEditorOneEntryScript.js"));
+        const utilityScriptSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "scripts", "utility.js"));
+        const mainScriptSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "scripts", "lexiconEditorOneEntryScript.js"));
         webviewPanel.webview.options = { enableScripts: true };
         webviewPanel.webview.html = /*html*/ `
         <!DOCTYPE html>

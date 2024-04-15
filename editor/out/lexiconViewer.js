@@ -30,7 +30,7 @@ class LexiconViewerProvider {
         this.context = context;
     }
     async resolveCustomTextEditor(document, webviewPanel, token) {
-        const scriptSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "lexiconViewerScript.js"));
+        const scriptSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "scripts", "lexiconViewerScript.js"));
         webviewPanel.webview.options = { enableScripts: true };
         webviewPanel.webview.html = /*html*/ `
         <!DOCTYPE html>
