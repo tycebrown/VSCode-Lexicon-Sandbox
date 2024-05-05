@@ -32,11 +32,13 @@ exports.deactivate = exports.activate = void 0;
 const vscode = __importStar(require("vscode"));
 const lexiconViewer_1 = __importDefault(require("./lexiconViewer"));
 const lexiconEditorOneEntry_1 = __importDefault(require("./lexiconEditorOneEntry"));
+const importBDBLexicon_1 = require("./importBDBLexicon");
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 function activate(context) {
     context.subscriptions.push(vscode.window.registerCustomEditorProvider("globalBibleTools.lexiconViewer", new lexiconViewer_1.default(context)));
     context.subscriptions.push(vscode.window.registerCustomEditorProvider("globalBibleTools.lexiconEditorOneEntry", new lexiconEditorOneEntry_1.default(context)));
+    vscode.commands.registerCommand("globalBibleTools.importBDBLexicon", importBDBLexicon_1.importBDBLexicon);
 }
 exports.activate = activate;
 // This method is called when your extension is deactivated

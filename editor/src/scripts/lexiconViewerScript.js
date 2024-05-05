@@ -15,7 +15,7 @@
             refElement.innerText = entry.ref;
 
             const contentElement = document.createElement("div");
-            contentElement.innerHTML = entry.content;
+            contentElement.innerHTML = entry.rawContent;
 
             const lexiconEntryListItem = document.createElement("li");
             lexiconEntryListItem.append(refElement, contentElement);

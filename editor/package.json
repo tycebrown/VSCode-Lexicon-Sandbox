@@ -39,6 +39,13 @@
           }
         ]
       }
+    ],
+    "commands": [
+      {
+        "command": "globalBibleTools.importBDBLexicon",
+        "title": "Import BDB Lexicon",
+        "shortTItle": "Import BDB"
+      }
     ]
   },
   "scripts": {

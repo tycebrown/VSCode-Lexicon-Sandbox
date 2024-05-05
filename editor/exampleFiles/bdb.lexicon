@@ -1,0 +1,1232 @@
+{
+  "lexiconName": "BDB",
+  "language": "Spanish",
+  "entries": [
+    {
+      "ref": "BDB, אב",
+      "rawContent": "† <big>[<span dir=\"rtl\">אֵב</span>]</big>  <strong>n.</strong> [<strong>m.</strong>] <strong>freshness, fresh green (</strong>Lag<sup>BN207</sup> Inf. <em>ibb;</em> thence concr., cf. Arabic <span dir=\"rtl\">أَبٌّ</span> <em>herbage, pasture</em>; above stem & meaning better than √<span dir=\"rtl\">אנב</span> (spring) cf. Aramaic <span dir=\"rtl\">אִנְבֵּהּ</span> (q.v.) Dl<sup>HA65, Pr114</sup><strong>)</strong> <span dir=\"rtl\">עֿדֶנּוּ בְאִבּוֹ</span> <em>while yet in its freshness</em> (i.e. <span dir=\"rtl\">אָחוּ</span>, reed) <a data-ref=\"Job 8:12\" href=\"/Job.8.12\">Jb 8:12</a>; concr., pl. <em>green shoots</em> <span dir=\"rtl\">בְּאִבֵּי הַנַּחַל</span> <a data-ref=\"Song of Songs 6:11\" href=\"/Song_of_Songs.6.11\">Ct 6:11</a> (‖ <span dir=\"rtl\">הֲפָֽרְחָה הַגֶּפֶן הֵנֵצוּ הָֽרִמֹּנִים׃</span>).",
+      "contentBlocks": [
+        {
+          "type": "non-translatable-text",
+          "subContent": "† "
+        },
+        {
+          "type": "tag",
+          "subContent": "<big>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "["
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "אֵב"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "]"
+        },
+        {
+          "type": "tag",
+          "subContent": "</big>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "  "
+        },
+        {
+          "type": "tag",
+          "subContent": "<strong>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "n",
+          "translatedSubContent": "jhkjkladdsff`````sssssfssjk"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "."
+        },
+        {
+          "type": "tag",
+          "subContent": "</strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " ["
+        },
+        {
+          "type": "tag",
+          "subContent": "<strong>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "m",
+          "translatedSubContent": "a"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "."
+        },
+        {
+          "type": "tag",
+          "subContent": "</strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "] "
+        },
+        {
+          "type": "tag",
+          "subContent": "<strong>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "freshness",
+          "translatedSubContent": "sasadfsdaffd"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ", "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "fresh green",
+          "translatedSubContent": "dsdddddsdfsdfsdfsd"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " ("
+        },
+        {
+          "type": "tag",
+          "subContent": "</strong>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Lag",
+          "translatedSubContent": "aaa"
+        },
+        {
+          "type": "tag",
+          "subContent": "<sup>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "BN",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "207"
+        },
+        {
+          "type": "tag",
+          "subContent": "</sup>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Inf",
+          "translatedSubContent": "sdfsdfsd"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ". "
+        },
+        {
+          "type": "tag",
+          "subContent": "<em>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "ibb",
+          "translatedSubContent": "sdfasdf"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ";"
+        },
+        {
+          "type": "tag",
+          "subContent": "</em>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "thence concr",
+          "translatedSubContent": "asdf"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "., "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "cf",
+          "translatedSubContent": "asfdsd"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ". "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Arabic",
+          "translatedSubContent": "asdfsdf"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "أَبٌّ"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<em>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "herbage",
+          "translatedSubContent": "sdfdssd"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ", "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "pasture",
+          "translatedSubContent": "dsfsdf"
+        },
+        {
+          "type": "tag",
+          "subContent": "</em>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "; "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "above stem",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " & "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "meaning better than",
+          "translatedSubContent": "dsfsdf"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " √"
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "אנב"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " ("
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "spring",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ") "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "cf",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ". "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Aramaic",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "אִנְבֵּהּ"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " ("
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "q",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "."
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "v",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ".) "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Dl",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "tag",
+          "subContent": "<sup>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "HA",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "65, "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Pr",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "114"
+        },
+        {
+          "type": "tag",
+          "subContent": "</sup>"
+        },
+        {
+          "type": "tag",
+          "subContent": "<strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ")"
+        },
+        {
+          "type": "tag",
+          "subContent": "</strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "עֿדֶנּוּ בְאִבּוֹ"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<em>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "while yet in its freshness",
+          "translatedSubContent": "sfsadfefsdfsdv vsdfsdfsdf"
+        },
+        {
+          "type": "tag",
+          "subContent": "</em>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " ("
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "i",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "."
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "e",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ". "
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "אָחוּ"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ", "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "reed",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ") "
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Job 8:12\" href=\"/Job.8.12\">"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Jb",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " 8:12"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "; "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "concr",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "., "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "pl",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ". "
+        },
+        {
+          "type": "tag",
+          "subContent": "<em>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "green shoots",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "tag",
+          "subContent": "</em>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "בְּאִבֵּי הַנַּחַל"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Song of Songs 6:11\" href=\"/Song_of_Songs.6.11\">"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Ct",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " 6:11"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " (‖ "
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "הֲפָֽרְחָה הַגֶּפֶן הֵנֵצוּ הָֽרִמֹּנִים׃"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ")."
+        }
+      ]
+    },
+    {
+      "ref": "BDB, אָבִיב",
+      "rawContent": "† <big><span dir=\"rtl\">אָבִיב</span></big>  <strong>n.m.</strong> <sup><a data-ref=\"Leviticus 2:14\" href=\"/Leviticus.2.14\">Lv 2:14</a></sup> <strong>coll. (</strong>Lag<sup>BN 207</sup> Inf.<strong>) </strong><br><strong>1.</strong>  <strong> fresh, young ears</strong> of barley <a data-ref=\"Exodus 9:31\" href=\"/Exodus.9.31\">Ex 9:31</a>; indef. <a data-ref=\"Leviticus 2:14\" href=\"/Leviticus.2.14\">Lv 2:14</a> <span dir=\"rtl\">מִנְחַת בִּכּוּרִים ליהוה א׳ קָלוּי בָּאֵשׁ</span>.<br><strong>2.</strong>  <span dir=\"rtl\">חֹדֶשׁ הָֽאָבִיב</span> month of ear-forming, or of growing green, <strong>Abib</strong>, month of Exodus &amp; passover, <a data-ref=\"Exodus 13:4\" href=\"/Exodus.13.4\">Ex 13:4</a>; <a data-ref=\"Exodus 23:15\" href=\"/Exodus.23.15\">23:15</a>; <a data-ref=\"Exodus 34:18\" href=\"/Exodus.34.18\">34:18</a>, <a data-ref=\"Exodus 34:18\" href=\"/Exodus.34.18\">18</a> (JE), <a data-ref=\"Deuteronomy 16:1\" href=\"/Deuteronomy.16.1\">Dt 16:1</a>, <a data-ref=\"Deuteronomy 16:1\" href=\"/Deuteronomy.16.1\">1</a> (1st month = c. April = <span dir=\"rtl\">הָרִאשֹׁן</span>, <span dir=\"rtl\">הַחֹדֶשׁ הָר׳</span> (q.v.) in P; v. Di <a data-ref=\"Exodus 12:2\" href=\"/Exodus.12.2\">Ex 12:2</a>; = postexilic <span dir=\"rtl\">נִיסָן</span> q.v.)",
+      "contentBlocks": [
+        {
+          "type": "non-translatable-text",
+          "subContent": "† "
+        },
+        {
+          "type": "tag",
+          "subContent": "<big>"
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "אָבִיב"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "tag",
+          "subContent": "</big>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "  "
+        },
+        {
+          "type": "tag",
+          "subContent": "<strong>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "n",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "."
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "m",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "."
+        },
+        {
+          "type": "tag",
+          "subContent": "</strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<sup>"
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Leviticus 2:14\" href=\"/Leviticus.2.14\">"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Lv",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " 2:14"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "tag",
+          "subContent": "</sup>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<strong>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "coll",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ". ("
+        },
+        {
+          "type": "tag",
+          "subContent": "</strong>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Lag",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "tag",
+          "subContent": "<sup>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "BN",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " 207"
+        },
+        {
+          "type": "tag",
+          "subContent": "</sup>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Inf",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "."
+        },
+        {
+          "type": "tag",
+          "subContent": "<strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ") "
+        },
+        {
+          "type": "tag",
+          "subContent": "</strong>"
+        },
+        {
+          "type": "tag",
+          "subContent": "<br>"
+        },
+        {
+          "type": "tag",
+          "subContent": "<strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "1."
+        },
+        {
+          "type": "tag",
+          "subContent": "</strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "  "
+        },
+        {
+          "type": "tag",
+          "subContent": "<strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "fresh",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ", "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "young ears",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "tag",
+          "subContent": "</strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "of barley",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Exodus 9:31\" href=\"/Exodus.9.31\">"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Ex",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " 9:31"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "; "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "indef",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ". "
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Leviticus 2:14\" href=\"/Leviticus.2.14\">"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Lv",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " 2:14"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "מִנְחַת בִּכּוּרִים ליהוה א׳ קָלוּי בָּאֵשׁ"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "."
+        },
+        {
+          "type": "tag",
+          "subContent": "<br>"
+        },
+        {
+          "type": "tag",
+          "subContent": "<strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "2."
+        },
+        {
+          "type": "tag",
+          "subContent": "</strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "  "
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "חֹדֶשׁ הָֽאָבִיב"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "month of ear-forming",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ", "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "or of growing green",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ", "
+        },
+        {
+          "type": "tag",
+          "subContent": "<strong>"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Abib",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "tag",
+          "subContent": "</strong>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ", "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "month of Exodus",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " &"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "amp",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "; "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "passover",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ", "
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Exodus 13:4\" href=\"/Exodus.13.4\">"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Ex",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " 13:4"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "; "
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Exodus 23:15\" href=\"/Exodus.23.15\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "23:15"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "; "
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Exodus 34:18\" href=\"/Exodus.34.18\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "34:18"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ", "
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Exodus 34:18\" href=\"/Exodus.34.18\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "18"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " ("
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "JE",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "), "
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Deuteronomy 16:1\" href=\"/Deuteronomy.16.1\">"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Dt",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " 16:1"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ", "
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Deuteronomy 16:1\" href=\"/Deuteronomy.16.1\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "1"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " (1"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "st month",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " = "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "c",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ". "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "April",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " = "
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "הָרִאשֹׁן"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ", "
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "הַחֹדֶשׁ הָר׳"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " ("
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "q",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "."
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "v",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ".) "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "in P",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "; "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "v",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ". "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Di",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<a data-ref=\"Exodus 12:2\" href=\"/Exodus.12.2\">"
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "Ex",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " 12:2"
+        },
+        {
+          "type": "tag",
+          "subContent": "</a>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "; = "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "postexilic",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "tag",
+          "subContent": "<span dir=\"rtl\">"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "נִיסָן"
+        },
+        {
+          "type": "tag",
+          "subContent": "</span>"
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": " "
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "q",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": "."
+        },
+        {
+          "type": "translatable-text",
+          "subContent": "v",
+          "translatedSubContent": ""
+        },
+        {
+          "type": "non-translatable-text",
+          "subContent": ".)"
+        }
+      ]
+    }
+  ]
+}

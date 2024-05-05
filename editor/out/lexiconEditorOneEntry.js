@@ -31,7 +31,6 @@ class LexiconEditorOneEntryProvider {
     }
     async resolveCustomTextEditor(document, webviewPanel, token) {
         const styleSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "styles", "lexiconEditorOneEntryStyles.css"));
-        const utilityScriptSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "scripts", "utility.js"));
         const mainScriptSrc = webviewPanel.webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, "src", "scripts", "lexiconEditorOneEntryScript.js"));
         webviewPanel.webview.options = { enableScripts: true };
         webviewPanel.webview.html = /*html*/ `
@@ -40,7 +39,6 @@ class LexiconEditorOneEntryProvider {
         <head>
             <meta charset="UTF-8" />
             <link rel="stylesheet" href="${styleSrc}">
-            <script defer src="${utilityScriptSrc}"></script>
             <script defer src="${mainScriptSrc}"></script>
         </head>
         <body id="main">
@@ -60,7 +58,7 @@ class LexiconEditorOneEntryProvider {
                 case "updateEntry":
                     const edit = new vscode.WorkspaceEdit();
                     const data = JSON.parse(document.getText());
-                    data.entries.find((entry) => entry.ref === e.ref).translatedContent = e.translatedContent;
+                    data.entries.find((entry) => entry.ref === e.ref).contentBlocks[e.index] = e.updatedContentBlock;
                     edit.replace(document.uri, new vscode.Range(0, 0, document.lineCount, 0), JSON.stringify(data, null, 2));
                     vscode.workspace.applyEdit(edit);
                     break;

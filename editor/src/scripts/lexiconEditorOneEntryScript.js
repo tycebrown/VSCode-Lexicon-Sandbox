@@ -3,15 +3,18 @@
   let entries;
   document.getElementById("main").addEventListener("input", (e) => {
     const [index, ref] = e.target.id.split("-");
-    const translatedContentTokens = tokenizeEntryContent(
-      entries.find((entry) => entry.ref === ref).translatedContent
-    );
+    let updatedContentBlock = entries.find((entry) => entry.ref === ref)
+      .contentBlocks[+index];
+    updatedContentBlock = {
+      ...updatedContentBlock,
+      translatedSubContent: e.target.textContent,
+    };
 
-    translatedContentTokens[index].subContent = e.target.textContent;
     vscode.postMessage({
       messageType: "updateEntry",
+      index,
       ref,
-      translatedContent: detokenizeEntryContent(translatedContentTokens),
+      updatedContentBlock,
     });
   });
 
@@ -20,7 +23,6 @@
       case "updateView":
         const data = JSON.parse(e.data.json);
         entries = data.entries;
-        data.entries.forEach((entry) => entry["translatedContent"]);
         const main = document.getElementById("main");
 
         const header = document.createElement("h1");
@@ -41,32 +43,26 @@
   }
 
   function interlineate(entry) {
-    const contentTokens = tokenizeEntryContent(entry.content);
-    const translatedContentTokens = tokenizeEntryContent(
-      entry.translatedContent
-    );
-    return contentTokens
-      .map((value, index) => [value, translatedContentTokens[index]])
-      .map(([contentToken, translatedContentToken], index) => {
-        switch (contentToken.type) {
-          case "tag": {
-            return contentToken.subContent;
-          }
-          case "english_text": {
-            return /* html */ `
-              <div class="inline-flex flex-col mb-0.5">
-                  <div class="inline-block">${contentToken.subContent}</div>
-                  <span id="${index}-${entry.ref}" class="custom-input" role="textbox" contenteditable="true">${translatedContentToken.subContent}</span>
-              </div>`;
-          }
-          case "non_english_text": {
-            return /*html*/ `
-              <div class="inline-flex flex-col mb-0.5">
-                  <div class="inline-block">${contentToken.subContent}</div>
-                  <div class="inline-block">${translatedContentToken.subContent}</div>
-              </div>`;
-          }
+    return entry.contentBlocks.map((block, index) => {
+      switch (block.type) {
+        case "tag": {
+          return block.subContent;
         }
-      });
+        case "translatable-text": {
+          return /* html */ `
+              <div class="inline-flex flex-col mb-0.5">
+                  <div class="inline-block">${block.subContent}</div>
+                  <span id="${index}-${entry.ref}" class="custom-input" role="textbox" contenteditable="true">${block.translatedSubContent}</span>
+              </div>`;
+        }
+        case "non-translatable-text": {
+          return /*html*/ `
+              <div class="inline-flex flex-col mb-0.5">
+                  <div class="inline-block">${block.subContent}</div>
+                  <div class="inline-block">${block.subContent}</div>
+              </div>`;
+        }
+      }
+    });
   }
 })();

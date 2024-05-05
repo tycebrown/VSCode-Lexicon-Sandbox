@@ -18,14 +18,6 @@ export default class LexiconEditorOneEntryProvider
         "lexiconEditorOneEntryStyles.css"
       )
     );
-    const utilityScriptSrc = webviewPanel.webview.asWebviewUri(
-      vscode.Uri.joinPath(
-        this.context.extensionUri,
-        "src",
-        "scripts",
-        "utility.js"
-      )
-    );
     const mainScriptSrc = webviewPanel.webview.asWebviewUri(
       vscode.Uri.joinPath(
         this.context.extensionUri,
@@ -42,7 +34,6 @@ export default class LexiconEditorOneEntryProvider
         <head>
             <meta charset="UTF-8" />
             <link rel="stylesheet" href="${styleSrc}">
-            <script defer src="${utilityScriptSrc}"></script>
             <script defer src="${mainScriptSrc}"></script>
         </head>
         <body id="main">
@@ -63,9 +54,9 @@ export default class LexiconEditorOneEntryProvider
         case "updateEntry":
           const edit = new vscode.WorkspaceEdit();
           const data = JSON.parse(document.getText());
-          data.entries.find(
-            (entry: any) => entry.ref === e.ref
-          ).translatedContent = e.translatedContent;
+          data.entries.find((entry: any) => entry.ref === e.ref).contentBlocks[
+            e.index
+          ] = e.updatedContentBlock;
           edit.replace(
             document.uri,
             new vscode.Range(0, 0, document.lineCount, 0),
