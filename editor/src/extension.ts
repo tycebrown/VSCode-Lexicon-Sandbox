@@ -20,9 +20,8 @@ export function activate(context: vscode.ExtensionContext) {
       new LexiconEditorOneEntryProvider(context)
     )
   );
-  vscode.commands.registerCommand(
-    "globalBibleTools.importBDBLexicon",
-    importBDBLexicon
+  vscode.commands.registerCommand("globalBibleTools.importBDBLexicon", () =>
+    importBDBLexicon(context)
   );
 }
 

@@ -38,7 +38,7 @@ const importBDBLexicon_1 = require("./importBDBLexicon");
 function activate(context) {
     context.subscriptions.push(vscode.window.registerCustomEditorProvider("globalBibleTools.lexiconViewer", new lexiconViewer_1.default(context)));
     context.subscriptions.push(vscode.window.registerCustomEditorProvider("globalBibleTools.lexiconEditorOneEntry", new lexiconEditorOneEntry_1.default(context)));
-    vscode.commands.registerCommand("globalBibleTools.importBDBLexicon", importBDBLexicon_1.importBDBLexicon);
+    vscode.commands.registerCommand("globalBibleTools.importBDBLexicon", () => (0, importBDBLexicon_1.importBDBLexicon)(context));
 }
 exports.activate = activate;
 // This method is called when your extension is deactivated

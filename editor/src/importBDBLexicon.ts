@@ -1,18 +1,14 @@
 import vscode from "vscode";
 
-export async function importBDBLexicon() {
-  const importDirectory = (
-    await vscode.window.showOpenDialog({
-      canSelectFiles: false,
-      canSelectFolders: true,
-      canSelectMany: false,
-      openLabel: "Import Here",
-    })
-  )?.[0];
+export async function importBDBLexicon(context: vscode.ExtensionContext) {
+  const importUri = await vscode.window.showSaveDialog({
+    saveLabel: "Import BDB Lexicon",
+    filters: { Lexicon: ["lexicon"] },
+  });
 
-  if (importDirectory) {
-    vscode.workspace.fs.writeFile(
-      vscode.Uri.joinPath(importDirectory, "bdb.lexicon"),
+  if (importUri) {
+    await vscode.workspace.fs.writeFile(
+      importUri,
       Uint8Array.from(
         new TextEncoder().encode(
           JSON.stringify(
@@ -38,6 +34,7 @@ export async function importBDBLexicon() {
         )
       )
     );
+    vscode.commands.executeCommand("vscode.open", importUri);
   }
 }
 

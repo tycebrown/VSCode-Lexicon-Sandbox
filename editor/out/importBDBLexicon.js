@@ -5,15 +5,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.importBDBLexicon = void 0;
 const vscode_1 = __importDefault(require("vscode"));
-async function importBDBLexicon() {
-    const importDirectory = (await vscode_1.default.window.showOpenDialog({
-        canSelectFiles: false,
-        canSelectFolders: true,
-        canSelectMany: false,
-        openLabel: "Import Here",
-    }))?.[0];
-    if (importDirectory) {
-        vscode_1.default.workspace.fs.writeFile(vscode_1.default.Uri.joinPath(importDirectory, "bdb.lexicon"), Uint8Array.from(new TextEncoder().encode(JSON.stringify({
+async function importBDBLexicon(context) {
+    const importUri = await vscode_1.default.window.showSaveDialog({
+        saveLabel: "Import BDB Lexicon",
+        filters: { Lexicon: ["lexicon"] },
+    });
+    if (importUri) {
+        await vscode_1.default.workspace.fs.writeFile(importUri, Uint8Array.from(new TextEncoder().encode(JSON.stringify({
             lexiconName: "BDB",
             language: "Spanish",
             entries: [
@@ -27,6 +25,7 @@ async function importBDBLexicon() {
                 },
             ].map(createEntry),
         }, null, 2))));
+        vscode_1.default.commands.executeCommand("vscode.open", importUri);
     }
 }
 exports.importBDBLexicon = importBDBLexicon;
