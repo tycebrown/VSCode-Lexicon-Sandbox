@@ -46,9 +46,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 case "translatable-text": {
                     return /* html */ `
               <div class="inline-flex flex-col mb-0.5">
-                  <div class="inline-block">${block.subContent}</div>
-                  <span id="${index}-${entry.ref}" class="custom-input" role="textbox" contenteditable="true">${block.translatedSubContent}</span>
-              </div>`;
+              <div class="inline-block">${block.subContent}</div>
+              <span id="${index}-${entry.ref}" class="custom-input" role="textbox" contenteditable="true" onbeforeinput="
+                if (
+                  event.inputType === 'insertParagraph' ||
+                  event.inputType === 'insertLineBreak'
+                ) {
+                  event.preventDefault();
+                }" >${block.translatedSubContent}</span>
+            </div>`;
                 }
                 case "non-translatable-text": {
                     return /*html*/ `
@@ -60,5 +66,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
             }
         });
     }
+    function preventNewlines(event) { }
 })();
 //# sourceMappingURL=lexiconEditorOneEntryScript.js.map
