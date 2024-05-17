@@ -5,10 +5,12 @@
     const [index, ref] = e.target.id.split("-");
     let updatedContentBlock = entries.find((entry) => entry.ref === ref)
       .contentBlocks[+index];
-    updatedContentBlock = {
-      ...updatedContentBlock,
-      translatedSubContent: e.target.textContent,
-    };
+    updatedContentBlock.translatedSubContent = e.target.innerText;
+
+    vscode.setState({
+      ...vscode.getState(),
+      entries,
+    });
 
     vscode.postMessage({
       messageType: "updateEntry",
@@ -22,18 +24,22 @@
     switch (e.data.messageType) {
       case "updateView":
         const data = JSON.parse(e.data.json);
-        entries = data.entries;
-        const main = document.getElementById("main");
-
-        const header = document.createElement("h1");
-        header.innerText = data.lexiconName;
-
-        const entry = createEditableEntryElement(data.entries[0]);
-
-        main.replaceChildren(header, entry);
-        break;
+        buildDocument(data);
+        vscode.setState({ data });
     }
   });
+
+  function buildDocument(data) {
+    entries = data.entries;
+    const main = document.getElementById("main");
+
+    const header = document.createElement("h1");
+    header.innerText = data.lexiconName;
+
+    const entry = createEditableEntryElement(data.entries[0]);
+
+    main.replaceChildren(header, entry);
+  }
 
   function createEditableEntryElement(entry) {
     const element = document.createElement("p");
@@ -71,5 +77,11 @@
       }
     });
   }
+
   function preventNewlines(event) {}
+
+  const state = vscode.getState();
+  if (state) {
+    buildDocument(state.data);
+  }
 })();

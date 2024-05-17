@@ -56,8 +56,11 @@ class LexiconEditorOneEntryProvider {
         webviewPanel.webview.onDidReceiveMessage((e) => {
             switch (e.messageType) {
                 case "updateEntry":
+                    console.log("################################## updateEntry");
                     const edit = new vscode.WorkspaceEdit();
                     const data = JSON.parse(document.getText());
+                    console.log(`VERY SUSPICIOUS: ${JSON.stringify(data.entries.find((entry) => entry.ref === e.ref)
+                        .contentBlocks[e.index], null, 2)} vs ${JSON.stringify(e.updatedContentBlock)}`);
                     data.entries.find((entry) => entry.ref === e.ref).contentBlocks[e.index] = e.updatedContentBlock;
                     edit.replace(document.uri, new vscode.Range(0, 0, document.lineCount, 0), JSON.stringify(data, null, 2));
                     vscode.workspace.applyEdit(edit);
